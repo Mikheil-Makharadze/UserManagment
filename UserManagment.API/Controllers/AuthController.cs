@@ -87,25 +87,5 @@ namespace UserManagment.API.Controllers
 
             return Ok(userInfo);
         }
-
-
-        [HttpPost("Logout")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public async Task<IActionResult> Logout()
-        {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var user = await userManager.FindByIdAsync(userId);
-
-            if (user != null)
-            {
-                user.IsActive = false;
-                await userManager.UpdateAsync(user);
-            }
-
-            await signInManager.SignOutAsync();
-            return Ok();
-        }
-
     }
 }
