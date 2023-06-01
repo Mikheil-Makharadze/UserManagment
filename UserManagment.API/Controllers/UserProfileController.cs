@@ -2,11 +2,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 using UserManagment.API.DTO.UserProfileDTO;
 using UserManagment.Core.Entities;
 using UserManagment.Core.Interfaces;
-using UserManagment.infrastructure.Services;
 
 namespace UserManagment.API.Controllers
 {
@@ -82,6 +80,7 @@ namespace UserManagment.API.Controllers
 
         [HttpPut("{id:int}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<UserProfileDTO>> UpdateUserProfile(int id, UserProfileUpdateDTO model)
         {

@@ -20,8 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\UserManagment.Core\UserManagment.Core.csproj" />
-    <ProjectReference Include="..\UserManagment.infrastructure\UserManagment.infrastructure.csproj" />
+    <ProjectReference Include="..\UserManagment.Core\Core.csproj" />
+    <ProjectReference Include="..\UserManagment.infrastructure\infrastructure.csproj" />
+    <ProjectReference Include="..\UserManagment.JsonPlaceholder\JsonPlaceholder.csproj" />
   </ItemGroup>
 
 </Project>

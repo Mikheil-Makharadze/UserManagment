@@ -106,6 +106,6 @@ namespace UserManagment.API.Controllers
             await signInManager.SignOutAsync();
             return Ok();
         }
-        
+
     }
 }

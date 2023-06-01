@@ -44,7 +44,6 @@ namespace UserManagment.infrastructure.Data.DB
 
                         await context.SaveChangesAsync();
                     }
-
                 }
                 catch (Exception ex)
                 {

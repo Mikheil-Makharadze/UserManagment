@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace UserManagment.API.DTO.UserProfileDTO
+﻿namespace UserManagment.API.DTO.UserProfileDTO
 {
     public class UserProfileDTO
     {
