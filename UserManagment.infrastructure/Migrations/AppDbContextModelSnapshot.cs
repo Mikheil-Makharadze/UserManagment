@@ -8,7 +8,7 @@ using UserManagment.infrastructure.Data.DB;
 
 #nullable disable
 
-namespace UserManagment.infrastructure.Migrations
+namespace infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     partial class AppDbContextModelSnapshot : ModelSnapshot

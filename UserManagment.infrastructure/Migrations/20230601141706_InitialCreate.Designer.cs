@@ -9,10 +9,10 @@ using UserManagment.infrastructure.Data.DB;
 
 #nullable disable
 
-namespace UserManagment.infrastructure.Migrations
+namespace infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230531190417_InitialCreate")]
+    [Migration("20230601141706_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
